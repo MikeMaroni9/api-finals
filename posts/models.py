@@ -19,11 +19,11 @@ class Post(models.Model):
     updated_at = models.DateTimeField(auto_now=True)
     title = models.CharField(max_length=255)
     content = models.TextField(blank=True)
-    image = models.ImageField(
-        upload_to='images/', default='../default_post_rgq6aq', blank=True
-    )
     post_filter = models.CharField(
         max_length=32, choices=post_filter_choices, default='normal'
+    )
+    image = models.ImageField(
+        upload_to='images/', default='../default_post_rgq6aq', blank=True
     )
 
     class Meta:
