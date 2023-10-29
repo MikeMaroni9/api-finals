@@ -61,7 +61,7 @@ SECRET_KEY = 'SECRET_KEY'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = 'DEV' in os.environ
 
-ALLOWED_HOSTS = ['8000-mikemaroni9-apifinals-wtzascounut.ws-eu105.gitpod.io', 'localhost', '<your_app_name>.herokuapp.com', ]
+ALLOWED_HOSTS = ['8000-mikemaroni9-apifinals-wtzascounut.ws-eu105.gitpod.io', 'localhost', 'https://finals-api-4952a1f1f072.herokuapp.com/', ]
 
 
 # Application definition
