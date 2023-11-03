@@ -23,7 +23,7 @@ class Post(models.Model):
         max_length=32, choices=post_filter_choices, default='normal'
     )
     image = models.ImageField(
-        upload_to='images/', default='../default_post_rgq6aq', blank=True
+        upload_to='images/', default='https://res.cloudinary.com/dyv1fobjp/image/upload/v1698973587/default_post_rgq6aq.png', blank=True
     )
 
     class Meta:
