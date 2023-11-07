@@ -8,11 +8,11 @@ class Post(models.Model):
     Default image set so that we can always reference image.url.
     """
     post_filter_choices = [
-        ('html', 'HTML'),
-        ('css', 'CSS'),
-        ('javascript', 'JavaScript'),
-        ('python', 'Python'),
-        ('react', 'React'),
+        ('HTML', 'HTML'),
+        ('CSS', 'CSS'),
+        ('JavaScript', 'JavaScript'),
+        ('Python', 'Python'),
+        ('React', 'React'),
     ]
     owner = models.ForeignKey(User, on_delete=models.CASCADE)
     created_at = models.DateTimeField(auto_now_add=True)
@@ -20,7 +20,7 @@ class Post(models.Model):
     title = models.CharField(max_length=255)
     content = models.TextField(blank=True)
     post_filter = models.CharField(
-        max_length=32, choices=post_filter_choices, default='html'
+        max_length=32, choices=post_filter_choices, default='HTML'
     )
     image = models.ImageField(
         upload_to='images/', default='../default_post_rgq6aq.png', blank=True
