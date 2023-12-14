@@ -59,11 +59,12 @@ REST_AUTH_SERIALIZERS = {
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = [
     os.environ.get('ALLOWED_HOST'),
     'localhost',
+    '8000-mikemaroni9-apifinals-ls6crxtgfl7.ws-eu106.gitpod.io',
 ]
 
 if 'CLIENT_ORIGIN' in os.environ:
@@ -77,6 +78,7 @@ if 'CLIENT_ORIGIN_DEV' in os.environ:
     ).group(0)
     CORS_ALLOWED_ORIGIN_REGEXES = [
         rf"{extracted_url}(eu|us)\d+\w\.gitpod\.io$",
+        r'https://3000-mikemaroni9-codingnexus-kewaxzdd44s\.ws-eu107\.gitpod\.io/'
     ]
 
 CORS_ALLOW_CREDENTIALS = True
