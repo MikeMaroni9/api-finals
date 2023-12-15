@@ -84,7 +84,7 @@ if 'CLIENT_ORIGIN_DEV' in os.environ:
 CORS_ALLOW_CREDENTIALS = True
 
 CORS_ALLOWED_ORIGINS = [
-    'https://3000-mikemaroni9-codingnexus-u71jm3qsmzi.ws-eu106.gitpod.io',
+    'https://3000-mikemaroni9-codingnexus-qeukch1g5oj.ws-eu107.gitpod.io',
     
 ]
 # Application definition
