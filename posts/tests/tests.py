@@ -13,8 +13,6 @@ class PostListViewTests(APITestCase):
         Post.objects.create(owner=adam, title='a title')
         response = self.client.get('/posts/')
         self.assertEqual(response.status_code, status.HTTP_200_OK)
-        print(response.data)
-        print(len(response.data))
 
     def test_logged_in_user_can_create_post(self):
         self.client.login(username='cheko', password='qweqwe123123')
@@ -58,3 +56,8 @@ class PostDetailViewTests(APITestCase):
         self.client.login(username='cheko', password='qweqwe123123')
         response = self.client.put('/posts/2/', {'title': 'a new title'})
         self.assertEqual(response.status_code, status.HTTP_403_FORBIDDEN)
+
+    def test_str_method(self):
+        # Test the __str__ method of the Post model
+        expected_str = f'{self.post.id} {self.post.title}'
+        self.assertEqual(str(self.post), expected_str)
