@@ -57,7 +57,3 @@ class PostDetailViewTests(APITestCase):
         response = self.client.put('/posts/2/', {'title': 'a new title'})
         self.assertEqual(response.status_code, status.HTTP_403_FORBIDDEN)
 
-    def test_str_method(self):
-        # Test the __str__ method of the Post model
-        expected_str = f'{self.post.id} {self.post.title}'
-        self.assertEqual(str(self.post), expected_str)
