@@ -63,7 +63,7 @@ DEBUG = False
 
 ALLOWED_HOSTS = [
     os.environ.get('ALLOWED_HOST'),
-    'localhost',
+    'https://3000-mikemaroni9-codingnexus-8aszayu7fk7.ws-eu107.gitpod.io/',
     'https://coding-nexus-df46516a7083.herokuapp.com/',
 ]
 

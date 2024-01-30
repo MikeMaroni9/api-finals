@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "coverage": "^0.4.1"
+    "coverage": "^0.4.1",
+    "react-router-dom": "^5.3.0"
   }
 }
