@@ -63,7 +63,8 @@ DEBUG = False
 
 ALLOWED_HOSTS = [
     os.environ.get('ALLOWED_HOST'),
-    'https://3000-mikemaroni9-codingnexus-8aszayu7fk7.ws-eu107.gitpod.io',
+    
+    'https://3000-mikemaroni9-codingnexus-8aszayu7fk7.ws-eu108.gitpod.io',
     'https://coding-nexus-df46516a7083.herokuapp.com/',
 ]
 
@@ -83,7 +84,7 @@ if 'CLIENT_ORIGIN_DEV' in os.environ:
 CORS_ALLOW_CREDENTIALS = True
 
 CORS_ALLOWED_ORIGINS = [
-    "https://3000-mikemaroni9-codingnexus-8aszayu7fk7.ws-eu107.gitpod.io",
+    "https://3000-mikemaroni9-codingnexus-8aszayu7fk7.ws-eu108.gitpod.io",
 ]
 # Application definition
 
