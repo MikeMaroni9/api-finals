@@ -198,7 +198,17 @@ Followers
 
 
 
-<h2>Database Construct</h2><a href="https://imgbb.com/"><img src="https://i.ibb.co/3kr3s2Z/19.png" alt="19" border="0"></a><hr>
+<h2>Database Construct</h2>
+
+<br>
+Diagrams created using Lucid Charts.
+<br>
+<br>
+<a href="https://ibb.co/pbh0rVm"><img src="https://i.ibb.co/xXFC894/Diagram-Lucid-Charts.png" alt="Diagram-Lucid-Charts" border="0"></a>
+<br>
+<br>
+<hr>
+
 
 
 
