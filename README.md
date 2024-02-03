@@ -1,110 +1,209 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+<a href="https://ibb.co/x690cXL"><img src="https://i.ibb.co/m4ZwYbT/coding-canva.jpg" alt="coding-canva" border="0"></a>
+<h1> API For Coding Nexus Project <h1>
+<h2> Project 5 : Coding Nexus - "One Line At a Time" </h2><p> Blog type application where a registered user can create a new posts, or comment on already existing ones.</p><p> Developed using : HTML, CSS, JAVASCRIPT, REACT, PYTHON, BOOTSTRAP and DJANGO Rest API</p>
+<br>
+<p>Link to the project on Heroku: <a href="https://coding-nexus-df46516a7083.herokuapp.com/">Coding Nexus on Heroku</a></p>
+<br>
+<p>Link to the API on Heroku: <a href="https://finals-api-4952a1f1f072.herokuapp.com/">Coding Nexus on Heroku</a></p>
+<br>
+<p>Link to the Project GITHUB repository: <a href="https://github.com/MikeMaroni9/codingnexus">GITHUB</a></p>
+<br>
+<p>Link to the API GITHUB repository: <a href="https://github.com/MikeMaroni9/api-finals">GITHUB</a></p>
+<br>
+<p>Link to the GITHUB USER Stories: <a href="https://github.com/users/MikeMaroni9/projects/5">User Stories</a></p>
+<br>
+<p>Link to the GITHUB Milestones: <a href="https://github.com/MikeMaroni9/codingnexus/milestones">Milestones</a></p>
+<br>
+<h2>Intro</h2>
+<p>The readme and all the steps taken was originally merged into one file on the main "Coding Nexus" Project page. 
+As per latest advise : </p>
+<strong><p>Lo3</p>
+<p>"For the API readme, it is templated but the API manual testing details are added in the front-end readme. The API deployment steps are also added there. It would be great to customize the backend readme with API-related information."</p></strong>
+<hr>
+<br>
+<p>I will try to extract all the relevant information and post it below, but just in case there's something missing, you can probably find it here : <a href="https://github.com/MikeMaroni9/codingnexus">"Coding Nexus"</a></p>
+<br>
 
-Welcome MikeMaroni9,
+<h2>Tools Used building API </h2>
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+<li>I commence by installing Django.
+<li>Using 'django-admin startproject,' I initialize the project.</li>
+<li>I add 'django-cloudinary-storage' for cloud storage.</li>
+<li>'Pillow' is integrated for image processing.</li>
+<li>Cloudinary is configured for image storage and settings.</li>
+<li>I enable automatic user profile creation with signals.</li>
+<li>I introduce 'djangorest' for API enhancement.</li>
+<li>Serialization is employed to convert Python data to JSON.</li>
+<li>'django-filter' enables precise data filtering.</li>
+<li>'axios' is installed for API requests in React.</li>
+<li>'react-infinite-scroll-component' ensures dynamic post loading.</li>
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
 
-## Gitpod Reminders
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
 
-`python3 -m http.server`
+<h2>Deployment<h2>
+<p>1.Installing gunicorn server to run Django on heroku</p><a href="https://imgbb.com/"><img src="https://i.ibb.co/fdTZKc2/1.png" alt="1" border="0"></a>
+<p>2.Install psycopg2 adapted for PostgreSQL database</p><a href="https://imgbb.com/"><img src="https://i.ibb.co/zff7RNQ/2.png" alt="2" border="0"></a>
+<p>3.Creating a Requirements.txt file for necessary dependencies</p><a href="https://imgbb.com/"><img src="https://i.ibb.co/gdX8SFS/3.png" alt="3" border="0"></a>
+<p>4.Creating a new project in Django</p><a href="https://imgbb.com/"><img src="https://i.ibb.co/Sxb3t8L/4.png" alt="4" border="0"></a>
+<p>5.Creating the API app</p><a href="https://imgbb.com/"><img src="https://i.ibb.co/ckYNB7z/5.png" alt="5" border="0"></a>
+<p>6.Linking GitHub repository to Heroku</p><a href="https://ibb.co/kgtd14n"><img src="https://i.ibb.co/vxStY35/6.png" alt="6" border="0"></a>
+<p>7.Creating a PostgreSQL database</p><a href="https://ibb.co/gSJy5Gz"><img src="https://i.ibb.co/X7tXh9S/7.png" alt="7" border="0"></a>
+<p>8.Adjusting env.py and settings.py files</p><p>Setting Config Vars in Heroku</p><a href="https://ibb.co/VCKGrLb"><img src="https://i.ibb.co/dphv1fX/8.png" alt="8" border="0"></a>
+<p>9.Creating a Procfile</p><a href="https://imgbb.com/"><img src="https://i.ibb.co/zsyHR7b/9.png" alt="9" border="0"></a>
+<p>10.Set Debug Mode to False</p><a href="https://ibb.co/gt1JVCR"><img src="https://i.ibb.co/j3KDRFr/10.png" alt="10" border="0"></a>
+<p>11.Add - X_FRAME_OPTIONS ='SAMEORIGIN' to settings file.</p><a href="https://ibb.co/gt1JVCR"><img src="https://i.ibb.co/j3KDRFr/10.png" alt="10" border="0"></a>
+<p>12.Deploying a project on Heroku</p><a href="https://ibb.co/mcgdtp9"><img src="https://i.ibb.co/FDCcJp5/11.png" alt="11" border="0"></a>
 
-A blue button should appear to click: _Make Public_,
 
-Another blue button should appear to click: _Open Browser_.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
 
-A blue button should appear to click: _Make Public_,
 
-Another blue button should appear to click: _Open Browser_.
+<br>
+<br>
+<h2>Testing the API</h2>
+<br>
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+Coverage installed for the back end API project and automated tests added. Pip freeze used to add it to requirements file. Currently at 92% coverage, will work on it some more if I got some time left over at the end. The Holiday season is hectic around here. 
+<br>
+<br>
+<a href="https://ibb.co/vzshcNH"><img src="https://i.ibb.co/Bs4Gfht/Screenshot-2023-12-16-195958.png" alt="Screenshot-2023-12-16-195958" border="0"></a>
+<br>
+<br>
+<a href="https://ibb.co/FHYrJWh"><img src="https://i.ibb.co/bbv0L36/Screenshot-2023-12-16-203500.png" alt="Screenshot-2023-12-16-203500" border="0"></a>
+<br>
+<br>
+<br>
+<h2>Manual Testing of the API :</h2>
+<br>
+<br>
 
-To log into the Heroku toolbelt CLI:
+Account
+<ol>
+   <li>Registration</li>
+   <ul>
+      <li> Expected - Creation of a new user through : https://8000-mikemaroni9-apifinals-hj02g1gprxu.ws-eu107.gitpod.io/dj-rest-auth/registration/</li>
+      <li> Testing - Entry of a new username and password for registration </li>
+      <li> Successful - HTTP 201 Created</li>
+   </ul>
+      <ul>
+      <li> Expected - Wrong password input. Creation of a new user through : https://8000-mikemaroni9-apifinals-hj02g1gprxu.ws-eu107.gitpod.io/dj-rest-auth/registration/</li>
+      <li> Testing - Entry of a new username and password for registration with second password being incorrect. </li>
+      <li> Failure - HTTP 400 Bad Request (    "non_field_errors": [
+        "The two password fields didn't match.")</li>
+   </ul>
+      <li>Login</li>
+   <ul>
+      <li> Expected - Login successful through https://8000-mikemaroni9-apifinals-hj02g1gprxu.ws-eu107.gitpod.io/api-auth/login/?next=/dj-rest-auth/registration/</li>
+      <li> Testing - Tested the feature by inputting previously created user details. </li>
+      <li> The redirect takes to the confirmation screen - HTTP 200 OK</li>
+   </ul>
+   </li>
+   <li>Logout</li>
+   <ul>
+      <li>Expected - Pressing log out button the user disconnects from the platform.</li>
+      <li>Testing - Tested the feature by presing Logout button</li>
+      <li>The user is logged out and page redirect takes to the HTTP 200 OK</li>
+   </ul>
+</ol>
+Posts
+<br>
+<br>
+<ol>
+   <li>New Post</li>
+   <ul>
+      <li>Expected - Creation of new post from https://8000-mikemaroni9-apifinals-hj02g1gprxu.ws-eu107.gitpod.io/posts/</li>
+      <li>Testing - Creation of new post by inputting Title/Content/Category filter</li>
+      <li>The redirect takes to the Post List. HTTP 201 Created.</li>
+   </ul>
+   <li>Editing the post</li>
+   <ul>
+      <li>Expected - Using the post id, editing the post through : https://8000-mikemaroni9-apifinals-hj02g1gprxu.ws-eu107.gitpod.io/posts/13/</li>
+      <li>Testing - Updating input field and pressing confirm.</li>
+      <li>The post has been updated - HTTP 200 OK</li>
+   </ul>
+   <li>Deleting the post</li>
+   <ul>
+      <li>Expected - From post ID page, deleting the post.</li>
+      <li>Testing - Tested the feature by pressing the delete button</li>
+      <li>Confirmation Screen, Acknowledgment. Post has been deleted. HTTP 204 No Content</li>
+   </ul>
+</ol>
+<br>
+Comments 
+<br>
+<br>
+<ol>
+   <li>Add Comment</li>
+   <ul>
+      <li>Expected - leaving a comment underneath the post.</li>
+      <li>Testing - Navigating to the page, choosing post in drop down menu and leaving a comment. https://8000-mikemaroni9-apifinals-hj02g1gprxu.ws-eu107.gitpod.io/comments/</li>
+      <li>Redirects to Comments List. HTTP 201 Created</li>
+   </ul>
+   <li>Editing Comment</li>
+   <ul>
+      <li>Expected - Ability to edit the comments by altering fields.</li>
+      <li>Testing - Navigating to the comments url followed by comments ID, altering the fields. https://8000-mikemaroni9-apifinals-hj02g1gprxu.ws-eu107.gitpod.io/comments/2/</li>
+      <li>Redirects to Comments List. HTTP 201 Created</li>
+   </ul>
+   <li>Add comment</li>
+   <ul>
+      <li>Expected - Deleting the comment.</li>
+      <li>Testing - Navigating to the comments url followed by comments ID, pressing the dedicated delete button. https://8000-mikemaroni9-apifinals-hj02g1gprxu.ws-eu107.gitpod.io/comments/2/</li>
+      <li>Pop up window asking for acknowledgment, confirmation, redirect, HTTP 204 No Content </li>
+   </ul>
+</ol>
+Likes
+<ol>
+<br>
+<br>
+   <li>Liking a Post</li>
+   <ul>
+      <li>Expected - Leaving a like under the post</li>
+      <li>Testing - Navigating to likes/ choosing a post from the drop down list. And pressing POST.</li>
+      <li>Redirect. HTTP 201 Created. </li>
+   </ul>
+   <li>Checking for duplicates</li>
+   <ul>
+      <li>Expected - Leaving a second like under the post</li>
+      <li>Testing - Navigating to likes/ choosing same post from the drop down list. And pressing POST.</li>
+      <li>HTTP 400 Bad Request, {
+    "detail": "possible duplicate"
+}</li>
+   </ul>
+   <li>Removing Like</li>
+   <ul>
+      <li>Expected - Unlike the post.</li>
+      <li>Testing - Navigating to /like/id and pressing delete. </li>
+      <li>Redirect back to like/id page, with code - HTTP 204 No Content</li>
+   </ul>
+</ol>
+Followers
+<ol>
+<br>
+<br>
+   <li>Follow a User</li>
+   <ul>
+      <li>Expected - Ability to follow a user of your choosing.</li>
+      <li>Testing - Navigating to followers/ choosing a user from the drop down list. And pressing POST.</li>
+      <li>Redirect. HTTP 201 Created. ID number of the follow created. </li>
+   </ul>
+   <li>Removing Follow</li>
+   <ul>
+      <li>Expected - Unfollowing User</li>
+      <li>Testing - Navigating to /followers/id and pressing delete. </li>
+      <li>Redirect back to followers/id page, with code - HTTP 204 No Content</li>
+   </ul>
+</ol>
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
 
-------
+<h2>Database Construct</h2><a href="https://imgbb.com/"><img src="https://i.ibb.co/3kr3s2Z/19.png" alt="19" border="0"></a><hr>
 
-## Release History
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
 
-**September 20 2023:** Update Python version to 3.9.17.
+<h2> The Persistent Problems </h2>
+<p>When an author Deletes a post, the confirmation is not asked.</p>
+The notifications for CRUD operations need to be displayed on the UI.
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
-
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
-
-**July 2 2021:** Remove extensions that are not available in Open VSX.
-
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
-
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
-
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
-
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
-
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
-
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
-
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
-------
-
-## FAQ about the uptime script
-
-**Why have you added this script?**
-
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
-
-**How will this affect me?**
-
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
-
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
-
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
-
-**So….?**
-
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
-
----
-
-Happy coding!
+<br>
