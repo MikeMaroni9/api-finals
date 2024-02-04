@@ -114,6 +114,7 @@ INSTALLED_APPS = [
     'likes',
     'followers',
     'notifications',
+    'notifications.apps.NotificationsConfig',
 ]
 SITE_ID = 1
 MIDDLEWARE = [
