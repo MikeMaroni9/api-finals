@@ -7,10 +7,14 @@ from django.core.signals import Signal
 
 @receiver(post_save, sender=Like)
 def create_like_notification(sender, instance, created, **kwargs):
+    print("Signal received!")
     if created:
+        print(f"Like created by {instance.owner} on post {instance.post}")
         Notification.objects.create(
             recipient=instance.post.owner,
-            sender=instance.post.owner,  # Update this line
+            sender=instance.owner,
             post=instance.post,
             notification_type='like'
         )
+
+

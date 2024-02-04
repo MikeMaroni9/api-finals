@@ -16,7 +16,9 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from .views import root_route, logout_route
-from notifications.views import NotificationList
+
+from notifications.views import NotificationListCreateView, NotificationDetailView
+
 
 urlpatterns = [
     path('', root_route, name='root_route'),  
@@ -32,6 +34,9 @@ urlpatterns = [
     path('', include('comments.urls')),
     path('', include('likes.urls')),
     path('', include('followers.urls')),
-    #path('api/', include('notifications.urls')),
-    path('api/', include(('notifications.urls', 'notifications'), namespace='notifications')),
+    path('api/', include('notifications.urls')),
+    
+    
+    path('notifications/', NotificationListCreateView.as_view(), name='notification-list-create'),
+    path('notifications/<int:pk>/', NotificationDetailView.as_view(), name='notification-detail'),
 ]

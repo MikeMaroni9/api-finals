@@ -1,6 +1,7 @@
-from django.urls import path, include
-from .views import NotificationList
+from django.urls import path
+from .views import NotificationListCreateView, NotificationDetailView
 
 urlpatterns = [
-    path('api/notifications/', NotificationList.as_view(), name='notification-list'),
+    path('notifications/', NotificationListCreateView.as_view(), name='notification-list-create'),
+    path('notifications/<int:pk>/', NotificationDetailView.as_view(), name='notification-detail'),
 ]

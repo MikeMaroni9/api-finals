@@ -97,6 +97,7 @@ INSTALLED_APPS = [
     'cloudinary_storage',
     'django.contrib.staticfiles',
     'cloudinary',
+    'notifications',
     'rest_framework',
     'django_filters',
     'rest_framework.authtoken',
@@ -114,7 +115,6 @@ INSTALLED_APPS = [
     'likes',
     'followers',
     
-    'notifications.apps.NotificationsConfig',
 ]
 SITE_ID = 1
 MIDDLEWARE = [
