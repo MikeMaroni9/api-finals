@@ -1,6 +1,6 @@
 from django.db.models.signals import post_save
 from django.dispatch import receiver
-from likes.models import Like  # Import your Like model
+from likes.models import Like 
 from notifications.models import Notification
 
 @receiver(post_save, sender=Like)

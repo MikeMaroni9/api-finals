@@ -16,6 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from .views import root_route, logout_route
+from notifications.views import NotificationList
 
 urlpatterns = [
     path('', root_route, name='root_route'),  
