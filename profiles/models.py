@@ -20,10 +20,6 @@ class Profile(models.Model):
 
 def create_profile(sender, instance, created, **kwargs):
     if created:
-        name = instance.username  
-        default_image_path = 'images/default_profile_qdjgyp.jpg'
-
-        if not Profile.objects.filter(owner=instance).exists():
-            profile = Profile.objects.create(owner=instance, name=name, image=default_image_path)
+        Profile.objects.create(owner=instance)
 
 post_save.connect(create_profile, sender=User)
