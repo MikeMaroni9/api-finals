@@ -8,7 +8,7 @@ def create_like_notification(sender, instance, created, **kwargs):
     if created:
         Notification.objects.create(
             recipient=instance.post.owner,
-            sender=instance.owner,
+            sender=instance.post.owner,  # Update this line
             post=instance.post,
             notification_type='like'
         )

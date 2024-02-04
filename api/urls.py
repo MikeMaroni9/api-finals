@@ -32,5 +32,6 @@ urlpatterns = [
     path('', include('comments.urls')),
     path('', include('likes.urls')),
     path('', include('followers.urls')),
-    path('api/', include('notifications.urls')),
+    #path('api/', include('notifications.urls')),
+    path('api/', include(('notifications.urls', 'notifications'), namespace='notifications')),
 ]
