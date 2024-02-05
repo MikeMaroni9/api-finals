@@ -16,7 +16,7 @@ class Notification(models.Model):
     recipient = models.ForeignKey(User, related_name='notifications', on_delete=models.CASCADE)
     sender = models.ForeignKey(User, on_delete=models.CASCADE)
     content_type = models.ForeignKey(ContentType, on_delete=models.CASCADE, default=1)
-    object_id = models.PositiveIntegerField(default=0)  # Add default value here
+    object_id = models.PositiveIntegerField(default=0)  
     content_object = GenericForeignKey('content_type', 'object_id')
     notification_type = models.CharField(max_length=20, choices=NOTIFICATION_TYPES)
     created_at = models.DateTimeField(auto_now_add=True)
