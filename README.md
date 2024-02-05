@@ -206,8 +206,19 @@ Diagrams created using Lucid Charts.
 <br>
 <a href="https://ibb.co/pbh0rVm"><img src="https://i.ibb.co/xXFC894/Diagram-Lucid-Charts.png" alt="Diagram-Lucid-Charts" border="0"></a>
 <br>
+<p>Created another App called Functions thats uses the api and Signals to import the notifications to the front end project. I don't have time to finish it as I have to hand in the project later this morning, but I connected it to the front end and it showed up in the created Notifications toolbar that user such and such liked your post named such and such. I didn't include the notification toolbar in the final deployment as it currently showed all notifications to all users, without checking the coresponding user id first and only show appropriate messages to to them. But the potential is there and I will finish it once I have some more free time.</p>
 <br>
 <hr>
+<a href="https://ibb.co/Hd7NRGd"><img src="https://i.ibb.co/2Nq8RcN/15.png" alt="15" border="0"></a>
+<br>
+<a href="https://imgbb.com/"><img src="https://i.ibb.co/wCJydjx/11.png" alt="11" border="0"></a>
+<br>
+<a href="https://ibb.co/C9938g9"><img src="https://i.ibb.co/FYYL32Y/12.png" alt="12" border="0"></a>
+<br>
+<a href="https://ibb.co/SXGJ2nm"><img src="https://i.ibb.co/Y7wb6kd/13.png" alt="13" border="0"></a>
+<br>
+
+<br>
 
 
 
