@@ -18,7 +18,7 @@ class Profile(models.Model):
 
 def create_profile(sender, instance, created, **kwargs):
     if created:
-        profile = Profile.objects.create(owner=instance, name='', content='')
+        Profile.objects.create(owner=instance)
         profile.image = 'default_profile_qdjgyp'
         profile.save()
 

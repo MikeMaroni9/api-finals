@@ -63,6 +63,7 @@ DEBUG = False
 
 ALLOWED_HOSTS = [
     os.environ.get('ALLOWED_HOST'),
+    '8000-mikemaroni9-apifinals-b55touupxod.ws-eu108.gitpod.io',
     'localhost',
     'https://coding-nexus-df46516a7083.herokuapp.com/',
 ]
